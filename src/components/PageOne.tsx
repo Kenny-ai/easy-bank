@@ -26,7 +26,7 @@ const PageOne: React.FC<Props> = ({ showNav }) => {
 
         <div className="pageOne-img-container bg-cover bg-right-top flex justify-center items-end mb-12 md:w-3/5 md:bg-left">
           <img
-            className="sm:w-3/4 md:w-full lg:w-5/6"
+            className="sm:w-3/4 md:w-full"
             src={PhonesImage}
             alt="Mock-up"
           />

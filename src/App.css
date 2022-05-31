@@ -1,0 +1,80 @@
+.App {
+  font-family: "Public Sans", sans-serif;
+}
+
+.header-button {
+  background: linear-gradient(
+    90deg,
+    hsl(136, 65%, 51%) 0%,
+    hsl(192, 70%, 51%) 50%
+  );
+}
+
+.pageOne-img-container {
+  background-image: url(./assets/bg-intro-mobile.svg);
+  height: 55vh;
+}
+
+@media (min-width: 640px) {
+  .pageOne-img-container {
+    height: 65vh;
+  }
+}
+
+.image-card {
+  display: grid;
+  grid-template-rows: 200px 200px;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 850px) {
+  .pageThree-content {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 40% 40%;
+  }
+  .image-card {
+    width: 100%;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1536px) {
+  .pageThree-content {
+    grid-template-columns: 21% 21% 21% 21%;
+    column-gap: 4%;
+  }
+}
+
+@media (min-width: 768px) {
+  .pageOne-img-container {
+    background-image: url(./assets/bg-intro-desktop.svg);
+    background-size: auto;
+    width: 55%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .pageOne-img-container {
+    height: 100%;
+    
+  }
+  .pageOne-container {
+    height: 90vh;
+  }
+  .pageOne-text-container {
+    width: 45%;
+  }
+
+  .pageTwo-header {
+    width: 55%;
+  }
+
+  .image-card {
+    grid-template-rows: 220px 220px;
+  }
+}
+
+.footer {
+  background-color: hsl(233, 26%, 24%);
+}
